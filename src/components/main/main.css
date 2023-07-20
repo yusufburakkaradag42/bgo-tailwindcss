@@ -1,0 +1,12 @@
+.active{
+    opacity: 0.6;
+} 
+.body{
+    background-image: linear-gradient(to right bottom, #110066, #2f0049, #310031, #2b001e, #200011, #2d0f19, #3b191f, #4a2425, #7e3e2e, #ac602c, #cd8c1f, #debf00);
+}
+/* .container{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color : white
+} */
