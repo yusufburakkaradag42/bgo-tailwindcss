@@ -28,7 +28,10 @@
   left: 0;
   right: 0;
 } */
-
+.main{
+  padding: 10px;
+ 
+}
 .main span{
   font-size: 20px;
   color: rgb(67, 179, 67);
