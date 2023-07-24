@@ -4,10 +4,11 @@
    
   }
 
+
 .showMenuNav {
     position: absolute;
-    width: 50%;
-    height: 50%;
+  
+    max-width: 50%;
     top: 50%;
     left: 50%;
     background: black;
@@ -21,4 +22,38 @@
     color: white;
     border-radius: 1rem;
 } 
+/* .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+
+.main span{
+  font-size: 20px;
+  color: rgb(67, 179, 67);
+}
+
+.main h1{
+  font-size: 28px;
+}
+
+.main div{
+  
+  padding: 10px;
+  color: white;
+}
+.left div:hover {
+  background-color: rgb(32, 31, 31);
+  border-radius: 10px;
+  
+  
+}
+.right-bg div:hover {
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  color: rgb(67, 179, 67);
+  
+  
+}
 
