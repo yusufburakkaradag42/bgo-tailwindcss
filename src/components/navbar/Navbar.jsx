@@ -23,8 +23,8 @@ const Navbar = ({isNavOpen, setIsNavOpen}) => {
   }, [setIsNavOpen]);
  return (
 
-  <div className="nav flex items-center justify-between  px-3 bg-black py-3  ">
-    <nav> 
+
+    <nav className="nav flex items-center justify-between  px-3 bg-black py-3  "> 
       <section className="MOBILE-MENU flex  ">
       <div
             className="HAMBURGER-ICON space-y-1"
@@ -38,14 +38,14 @@ const Navbar = ({isNavOpen, setIsNavOpen}) => {
           <span className="block h-0.5 w-8  bg-white"></span>
         </div>
 
-        <div ref={mobileMenuRef} className={isNavOpen ? 'showMenuNav' : 'hideMenuNav'}>
-            <div className="CROSS-ICON absolute top-0 right-0 px-8 " onClick={() => setIsNavOpen(false)}>
+        <div ref={mobileMenuRef} className=  { isNavOpen ? 'showMenuNav' : 'hideMenuNav'}>
+            <div className="CROSS-ICON relative top-0 right-0 px-8 " onClick={() => setIsNavOpen(false)}>
               {/* Your cross icon SVG */}
             </div>
 
           <div className="main flex gap-1 ">
            <div className="left">
-            <p> <span class="material-symbols-outlined">public</span> START HERE</p>
+            <p> <span class="material-symbols-outlined inline-block align-middle ">public</span> START HERE</p>
            <a href="/"> <div>
               <h1>Home and Info</h1>
               <p>More Information about the project</p>
@@ -61,10 +61,9 @@ const Navbar = ({isNavOpen, setIsNavOpen}) => {
               <p>Bulding a theiving communty together</p>
             </div></a>
            </div>
-
-           
+      
            <div className="right">
-            <p><span class="material-symbols-outlined">
+            <p><span class="material-symbols-outlined inline-block align-middle">
 explore
 </span> RESOURCES</p>
             <div className="right-bg">
@@ -78,11 +77,6 @@ explore
         </div>
       </section>
     </nav>
-    
-  </div>
-  
- 
-
 );
 }
 
